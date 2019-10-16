@@ -1,0 +1,235 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='icon', type='../static/media/png', href='static/media/USNP.png')
+  meta(http-equiv='X-UA-COMPATIBLE' content='ie-edge')
+  link(href='https://fonts.googleapis.com/css?family=Rajdhani:500&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+  link(rel='stylesheet' href='../static/stylesheets/styles.css')
+  link(rel='stylesheet' href='../static/stylesheets/swiper.min.css')
+  script(src='https://kit.fontawesome.com/e9b591fc36.js')
+  title US Nursing Care &amp; Staffing
+.menu-wrap
+  input.toggler(type='checkbox')
+  .wrapper
+    .hamburger
+      div
+    img.logo(src='../static/media/USNP.png' alt='logo')
+  .menu
+    div
+      div
+        ul
+          li
+            a(href='#') Home
+          li
+            a(href='#about') About
+          li
+            a(href='#services') Services
+          li
+            a(href='#faqs') FAQs
+          li
+            a(href='#requirements') Requirements
+          li
+            a(href='#contacts') Contact
+header.showcase
+  .container.showcase-inner
+    h1 Welcome!
+    p
+      | We are US NURSING PLUS; an Illinois Incorporated Entity. We are involve in care and staffing; we are 
+        br an employment agency hiring eligible candidate with suitable knowledge, skills and experience in the healthcare industry.  Healthcare professionals Like  CNA (Certified Nurse Assistants),  LPN (License Practical Nurse),  and  RN  (Registered Nurse) will be given specific job assignments to the best suitable facility. Job positions like DON (Director of Nursing), ADON (Assistant Director of Nursing), Floor Nurse, Nurse Supervisor, Nurse Manager, Restorative Care Nurse, MDS Coordinator, Activity Aid, ETC. are some of the possible roles and responsibilities US NURSING PLUS and affiliates are looking to employ. 
+        br We also provide education and training like ACLS, BLS, HeartSaver CPR/AED/ FIRST AID Accreditation by The American Heart Association as this is part of the job requirement. We also have a Nursing Review Program for NCLEX-PN, NCLEX-RN, ATI, HESI exit exams, and CNA state certification examination that 
+        br helps nursing students progress to the next level in the healthcare industry. We also offer career advice
+        br at no cost for nursing students and job seekers.
+
+    a.btn(href='#') Read More
+//
+  <form action="get">
+  <fieldset class="first-fieldset">
+  <h2 class="form-title">Give us a wave!</h2>
+  <div class="container-1">
+  <label for="name">Full name</label>
+  <input required type="text" id="name" name="user_name" placeholder="Required"><br>
+  </div>
+  <div class="container-2">
+  <label for="email">Email</label>
+  <input required type="email" id="mail" name="user_email" placeholder="Required"><br>
+  </div>
+  </fieldset>
+  <div class="textarea-wrap">
+  <p class="textarea">Send a message with your attached resume!</p>
+  <textarea name="user_message" id="textarea"></textarea>
+  <button type="submit" class="form-btn">Send</button>
+  </div>
+  </form>
+#about.color-bg
+  .color-bg-wrapper
+    h2 Career + Visa
+    p.skew1
+      | HEALTHCARE INDUSTRY CAREER IS OPEN FOR PETITIONING FOR WORK AND IMMIGRANT VISA.
+      br
+      |                 Processing of visa will not be an issue as Corporate and Immigration Lawyer will process application on all petitionable positions for qualified applicants. Employability is also open for non-medical job positions.
+  img.color-bg-image(src='../static/media/ad.jpg' alt='pic')
+#services.services
+  h2.services-title Services We Provide:
+  .services-wrapper
+    .services-portions
+      i.fas.fa-users
+      h3 Staffing &amp; Employment
+      p.services-par
+        | The USNCS is needing of employees. We are looking for RN&apos;s, LPN&apos;s and CNA&apos;s all over Illinois. If you are interested in one of our positions, we are more than happy to receive your application. Send us a message with your attached resume and the following requirements below by sending it to our email address, or you can give it to us directly.
+    .services-portions
+      i.fas.fa-heartbeat
+      h3 AHA Accredited
+      p.services-par
+        | We are American Heart Association accredited. We teach and practice with caliber, following the industry&apos;s standards and sometimes surpassing them. We don&apos;t just teach and practice with the rules, we teach and practice with our hearts.
+  .services-wrapper
+    .services-portions
+      i.fas.fa-book-open
+      h3 Review Center
+      p.services-par
+        | We certify students and professionals in order for them to be able to work and help others, we are letting them be certified and have license after a series of examinations. We have our own review centers in Chicago. You can check out our websites: 
+        a.web-links(href='https://ahacpr.us' target='blank') ahacpr.us
+        |  and 
+        a.web-links(href='https://usnursingreview.com' target='blank') usnursingreview.com
+        | .
+    .services-portions
+      i.fas.fa-hands-helping
+      h3 Free Job Consultation Advice
+      p.services-par
+        | We share our knowledge and experience to our employees, as it results to higher morale in the workplace. Whenever you need help on anything in this industry, as long as we are knowledgeable about it, we will always be happy to help.
+.illinoismap
+  h3.illinoistitle We accept on:
+  .illinoismap-wrapper
+    ul.disclist
+      li.discs Chicago, IL
+      li.discs Des Plaines, IL
+      li.discs Niles, IL
+      li.discs Lincoln, IL
+      li.discs Peoria, IL
+      li.discs East Peoria, IL
+      li.discs Park, IL
+      li.discs Matteson, IL
+      li.discs Decatur, IL
+      li.discs Byron, IL
+      li.discs Auburn, IL
+      li.discs Rock Island, IL
+    img.imap(src='../static/media/illinois.png' alt='Illinois Map')
+// Slider main container
+#faqs.swiper-content-wrapper
+  h3.faqs FAQs
+  .swiper-container
+    // Additional required wrapper
+    .swiper-wrapper
+      // Slides
+      .swiper-slide
+        h3 What are the requirements for RN, LPN, and CNA staffing?
+        p Look for the information below.
+      .swiper-slide
+        h3 Lorem ipsum dolor sit amet?
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      .swiper-slide
+        h3 Lorem ipsum dolor sit amet?
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium sint.
+    // If we need pagination
+    .swiper-pagination
+#requirements.statements
+  h2.statements-title REQUIREMENTS
+  ul.requirements-list1
+    h4 Staffing Only Application:
+    li 1) Resume
+    li 2) Valid Photo I.D.
+    li 3) RN / LPN - Illinois License
+    li 4) CNA - Illinois Certification
+    li
+      | 5) ACLS or BLS Accreditaiton (We provide American Heart Association
+      | accreditation. Contact us for details)
+    li 6) PPD
+    li 7) Other Immunization 
+    li 8) Agency forms completion
+    li.secondary-list 8a. background checks
+    li.secondary-list 8b. HIPPA Forms
+    li.secondary-list 8c. Employment Contract
+    li.requirements-note
+      | NOTE: The requirements can be completed at the office or you can
+      | upload them and fill up the electronic forms here on the website.
+  //
+    <ul class="requirements-list2">
+    <h4>Staffing + US VISA Application:</h4>
+    <li>1) Resume</li>
+    <li>2) Valid Photo I.D.</li>
+    <li>3) RN / LPN - Illinois License</li>
+    <li>4) CNA - Illinois Certification</li>
+    <li>5) ACLS or BLS Accreditaiton (We provide American Heart Association
+    accreditation. Contact us for details)</li>
+    <li>6) PPD</li>
+    <li>7) Other Immunization </li>
+    <li>8) Agency forms completion</li>
+    <li class="secondary-list">8a. background checks</li>
+    <li class="secondary-list">8b. HIPPA Forms</li>
+    <li class="secondary-list">8c. Employment Contract</li>
+    <li class="requirements-note">NOTE: The requirements can be completed at the office or you can
+    upload them and fill up the electronic forms here on the website.
+    </li>
+    </ul>
+.company-logos
+  h4 In association with:
+  img.company-logo2(src='../static/media/guru_logo.png' alt='logo')
+  img.company-logo3(src='../static/media/befic-logo.png' alt='logo')
+aside#contacts.contacts
+  .contacts-wrap
+    .contact-second-wrap
+      h3 Contacts:
+      address
+        a(href='#') usncs@gmail.com
+        br
+        a(href='tel:+13115552368') (311) 555-2368
+    .contact-second-wrap
+      h3 Visit:
+      address
+        a(href='https://ahacpr.us' target='blank') ahacpr.us
+        br
+        a(href='https://usnursingreview.com' target='blank') usnursingreview.com
+footer.footer
+  // Button trigger modal
+  button.btn.btn-primary.disclaimer-btn(type='button' data-toggle='modal' data-target='#exampleModalLong')
+    | DISCLAIMER
+  // Modal
+  #exampleModalLong.modal.fade(tabindex='-1' role='dialog' aria-labelledby='exampleModalLongTitle' aria-hidden='true')
+    .modal-dialog(role='document')
+      .modal-content
+        .modal-header
+          h5#exampleModalLongTitle.modal-title Disclaimer
+          button.close(type='button' data-dismiss='modal' aria-label='Close')
+        .modal-body
+          | US NURSING PLUS  is not a  recruitment agency. Applicants  interested to  find a job
+          | in the  U.S.  can get assistance with legal help from an immigration lawyer. We are not
+          | a government agency; we are not USCIS or Immigrant Visa Consular Processing Center.
+          | We  do not grant,  approve,  or  give immigrant  visa. We may provide career advice at no
+          | cost to nursing students and job seekers, but we do not provide legal advice to applicants
+          | or job seekers who are looking for job opportunities that will process US VISA. Job seekers
+          | or applications looking for petitioner for US VISA will be sent to the USCIS following all legal
+          | government required procedure aided by an immigration lawyer.
+          | We are US NURSING PLUS; an Illinois Incorporated Entity. We are involve in care and staffing; we are
+          | an employment agency hiring eligible candidate with suitable knowledge, skills and experience in the healthcare industry.  Healthcare professionals Like  CNA (Certified Nurse Assistants),  LPN (License Practical Nurse),  and  RN  (Registered Nurse) will be given specific job assignments to the best suitable facility. Job positions like DON (Director of Nursing), ADON (Assistant Director of Nursing), Floor Nurse, Nurse Supervisor, Nurse Manager, Restorative Care Nurse, MDS Coordinator, Activity Aid, ETC. are some of the possible roles and responsibilities US NURSING PLUS and affiliates are looking to employ.
+          | We also provide education and training like ACLS, BLS, HeartSaver CPR/AED/ FIRST AID Accreditation by The American Heart Association as this is part of the job requirement. We also have a Nursing Review Program for NCLEX-PN, NCLEX-RN, ATI, HESI exit exams, and CNA state certification examination that
+          | helps nursing students progress to the next level in the healthcare industry. We also offer career advice
+          | at no cost for nursing students and job seekers.
+        .modal-footer
+          button.btn.btn-secondary(type='button' data-dismiss='modal') Close
+  |             &copy; Copyright 2019 | Website Designed and Maintained by: US Nursing Care &amp; Staffing
+script(src='../static/js/swiper.min.js')
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous')
+script.
+  var mySwiper = new Swiper ('.swiper-container', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  // If we need pagination
+  pagination: {
+  el: '.swiper-pagination',
+  dynamicBullets: true,
+  },
+  })

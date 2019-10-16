@@ -1,0 +1,876 @@
+:root {
+    --primary-color: rgba(13, 110, 139, 0.75);
+    --secondary-color: rgba(192, 192, 192, 0.75);
+    --overlay-color: rgba(24, 39, 51, 0.85);
+    --menu-speed: 0.45s;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background-color: #24252a; */
+}
+
+body {
+    font-family: 'Rajdhani', sans-serif;
+    line-height: 1.4;
+    color: var(--overlay-color);
+}
+
+a {
+    color: #fff;
+    text-decoration: #fff;
+}
+
+li {
+    list-style: none;
+}
+
+address {
+    margin-bottom: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 3rem;
+}
+
+.showcase {
+    background-color: var(--primary-color);
+    color: #fff;
+    height: 100vh;
+    position: relative;
+    z-index: -1;
+    width: 100%;
+}
+
+.showcase:before {
+    content:'';
+    background: url('../media/illinois.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.showcase .showcase-inner {
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    background-color: var(--primary-color);
+}
+
+.showcase h1 {
+    font-size: 4rem;
+}
+
+.showcase p {
+    font-size: 1.3rem;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    transition: opacity 1s ease-in;
+}
+
+.btn:hover {
+    opacity: 0.7;
+}
+
+li{
+    list-style: none;
+}
+
+.logo,
+.company-logo1,
+.company-logo2,
+.company-logo3 {
+    width: 80px;
+    height: 95px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.menu-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.menu-wrap .toggler {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    opacity: 0;
+}
+
+.menu-wrap .hamburger {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 60px;
+    height: 60px;
+    padding: 1rem;
+    background: var(--overlay-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 162px;
+    border-radius: 5px;
+}
+
+/* Hamburger Line */
+.menu-wrap .hamburger > div {
+    position: relative;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+/* Top and Bottom lines */
+.menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    top: -10px;
+    width: 100%;
+    height: 2px;
+    background: inherit;
+}
+
+/* Moves line down */
+.menu-wrap .hamburger > div:after {
+    top: 10px;
+}
+
+/* Toggler animate */
+.menu-wrap .toggler:checked + .hamburger > div {
+    transform: rotate(135deg);
+}
+
+/* Turn lines into X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+/* Rotate on hover when checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+    transform: rotate(225deg);
+}
+
+/* Show menu */
+.menu-wrap .toggler:checked ~ .menu {
+    visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+    transform: scale(1);
+    transition-duration: var(--menu-speed);
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+    opacity: 1;
+    transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-wrap .menu > div {
+    background: var(--overlay-color);
+    border-radius: 50%;
+    width: 200vw;
+    height: 200vw;
+    display: flex;
+    flex: none;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0);
+    transition: all 0.4s ease;
+}
+
+.menu-wrap .menu > div > div {
+    text-align: center;
+    max-width: 90vw;
+    max-height: 100vh;
+    opacity: 0;
+    transition: opacity: 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+    color: #fff;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+    color: inherit;
+    text-decoration: none;
+    transition: color: 0.4s ease;
+}
+
+.wrapper {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+/* .container{
+	width: 90%;
+	margin: 0 auto;
+} */
+
+.main-content{
+	text-align: center;
+	border-bottom: solid darkslategrey 4px;
+}
+
+form{
+    background-color: var(--secondary-color);
+    color: #000;
+    margin: -58px auto 40px auto;
+    width: 90%;
+    border-radius: 5px;
+}
+
+h2.form-title {
+    margin: 10px;
+}
+
+button.form-btn {
+    margin-bottom: 15px;
+}
+
+legend{
+	border-top: solid darkslategrey 2px;
+	width: 100%;
+	padding-top: 15px;
+}
+
+div.form-example,
+div.container-1,
+div.container-2,
+div.textarea-wrap {
+    width: 90%;
+    margin: auto;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="select"],
+textarea,
+select{
+	margin: 5px 3px 5px 0;
+	padding: 9px 80px 19px 10px;
+	background: #f4f7f8;
+	border: none;
+	border-radius: 8px;
+	outline: 0;
+	box-shadow: 0 0 1px 1px #f4f7f8;
+	width: 100%;
+}
+
+input[type="radio"],
+input[type="checkbox"]{
+	margin-bottom: 15px;
+}
+
+input.zip-code{
+	width: 50%;
+	margin-bottom: 30px;
+}
+
+/* label{
+	display: block;
+	margin: 20px 0 10px 10px;
+} */
+
+label.buttons{
+	display: inline;
+}
+
+fieldset{
+	border: none;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.textarea-paragraph{
+	margin-left: 10px;
+}
+
+button{
+	color: white;
+	background: teal;
+	padding: 10px 80px;
+	width: 100%;
+	font-size: 2em;
+	border: none;
+	border-radius: 7px;
+	text-align: center;
+}
+
+textarea,
+button{
+	margin-bottom: 5px;
+}
+
+/* Pseudo Elements------------------------------------------*/
+
+input:focus,
+textarea:focus,
+button:focus,
+select:focus{
+	border: solid teal 2px;
+	background: darkslategrey;
+	color: white;
+	transition: all 0.4s ease-out;
+}
+
+input#name:valid,
+input#mail:valid{
+	border-color: green;
+	background: #f4f7f8;
+	color: black;
+}
+
+::placeholder{
+	text-align: right;
+	font-style: italic;
+	padding-right: 10px;
+}
+
+
+.color-bg {
+    width: 100%;
+    margin: 100px auto 0;
+    background: var(--secondary-color);
+    padding: 20px;
+    color: var(--primary-color);
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.color-bg:before {
+    content: '';
+    width: 0; 
+    height: 0; 
+    border-right: 316px solid transparent; 
+    border-bottom: 50px solid var(--secondary-color);
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+}
+
+.color-bg-image {
+    width: 100%;
+    margin: auto;
+    display: flex; /* To center align */
+    border-radius: 1.5px;
+}
+
+.fas {
+    font-weight: 900;
+    font-size: 100px;
+    color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 50%;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.web-links {
+    color: var(--primary-color);
+}
+
+.services-title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.services-portions {
+    text-align: center;
+}
+
+.services-portions h3 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.services-par {
+    text-align: justify;
+    margin: 0px 10px 50px 10px;
+}
+
+.skew1,
+.disclist {
+    color: darkslategray;
+}
+
+.illinoismap {
+    margin-top: 74px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.illinoismap-wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.illinoistitle {
+    margin-left: 10px;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.imap {
+    width: 170px;
+}
+
+.disclist {
+    align-self: center;
+}
+
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-content-wrapper {
+    background: var(--secondary-color);
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 100px;
+}
+
+.faqs {
+    text-align: center;
+    font-size: 3rem;
+    background: var(--primary-color);
+    color: #f4f7f8;
+    margin-bottom: 30px;
+}
+
+.requirements-list1,
+.requirements-list2 {
+    text-align: left;
+    margin-left: 10px;
+}
+
+.requirements-list2 h4 {
+    border-top: solid 2px var(--overlay-color);
+    padding-top: 8px;
+}
+
+.requirements-list li {
+    margin-bottom: 5px;
+    font-size: 1.1rem;
+}
+
+.requirements-list h4 {
+    font-weight: bold;
+    font-size: 1.6rem;
+}
+
+.secondary-list {
+    list-style-type: disc;
+    margin-left: 25px;
+}
+
+.requirements-note {
+    margin-left: 2px;
+    margin-top: 15px;
+    padding-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.swiper-slide {
+    margin-top: -5px;
+    margin-bottom: 55px;
+    text-align: center;
+    font-size: 18px;   
+    color: var(--overlay-color);
+}
+
+.swiper-slide h3 {
+    color: var(--primary-color);
+}
+
+.statements {
+    text-align: center;
+    background-color: var(--secondary-color);
+    margin-top: -40px;
+    color: var(--overlay-color);
+}
+
+.statements-title {
+    padding-top: 30px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 30px;
+    border-top: 5px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.statements-image {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.statements-name {
+    border-top: 1px solid var(--overlay-color);
+    border-bottom: 1px solid var(--overlay-color);
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.statements-statement{
+    padding-bottom: 20px;
+}
+
+.company-logos {
+    text-align: center;
+}
+
+.company-logo1,
+.company-logo2,
+.company-logo3 {
+    margin-bottom: 40px;
+}
+
+.company-logo2 {
+    width: 90px;
+}
+
+.company-logo3 {
+    width: 80px;
+    height: 50px;
+}
+
+.contacts {
+    margin-top: -16px;
+    background-color: var(--primary-color);
+}
+
+.contacts-wrap {
+    padding: 10px 0px 10px 8px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact-second-wrap {
+    width: 50%;
+}
+
+.footer {
+    background-color: rgba(000, 000, 000, .9);
+    color: #f4f7f8;
+    padding: 20px 0px 15px 0px;
+    text-align: center;
+}
+
+.modal-title {
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.modal-body {
+    color: var(--overlay-color);
+}
+
+.disclaimer-btn {
+    background-color: transparent;
+    border: 2px solid var(--primary-color);
+}
+
+.disclaimer-btn:hover {
+    background-color: var(--primary-color);
+    transition: all .4s ease;
+}
+
+.btn-primary {
+    width: 150px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+/*===============================
+		   Media Query
+=================================*/
+
+/* 768 viewport */
+
+@media (min-width: 768px){
+
+	input[type="text"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="select"],
+	select{
+		width: 80%;
+	}
+
+	.container-1,
+	.container-2,
+	.container-3,
+	.container-4,
+	.container-5,
+	.container-6,
+	.container-7,
+	label{
+		display: flex;
+		flex: 1;
+		margin-bottom: 10px;
+	}
+
+	input.zip-code{
+		width: 20%;
+		margin-right: 60.3%;
+	}
+}
+
+
+
+/* 1024 viewport */
+@media(min-width: 1024px){
+
+    .menu-wrap .hamburger {
+        margin-right: 855px;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    .color-bg {
+        display: flex;
+        padding: 50px;
+    }
+
+    .color-bg:before {
+        border-right: 1024px solid transparent;
+    }
+
+    .color-bg-wrapper {
+        align-self: center;
+    }
+
+    .color-bg-wrapper h2 {
+        font-size: 3.3rem;
+    }
+
+    .color-bg-wrapper p {
+        font-size: 1.1rem;
+        margin-right: 15px;
+    }
+
+    .color-bg-wrapper p {
+        max-width: 660px;
+    }
+
+    .color-bg-image {
+        width: 339px;
+    }
+
+    .services-wrapper {
+        display: flex;
+    }
+
+    .services-portions {
+        width: 50%;
+    }
+
+    .services-par {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .illinoismap {
+        margin-top: 0px;
+    }
+
+    .illinoistitle {
+        margin-left: 40px;
+        font-size: 2rem;
+    }
+
+    .illinoismap-wrapper {
+        justify-content: space-evenly;
+    }
+    
+    .disclist {
+        font-size: 1.1rem;
+    }
+
+    .imap {
+        width: 200px;
+    }
+
+    .swiper-content-wrapper {
+        margin-top: 40px;
+    }
+
+    .swiper-slide {
+        width: 500px;
+    }
+
+    .requirements-list1,
+    .requirements-list2 {
+        margin-left: 54px;
+        font-size: 1.2rem;
+    }
+
+    .requirements-note {
+        padding-bottom: 15px;
+    }
+
+    .requirements-list1 h4 {
+        font-size: 2rem;
+    }
+
+    .contact-second-wrap {
+        text-align: center;
+    }
+
+    form {
+        width: 600px;
+    }
+    
+}
+
+/* 1200 viewport */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+/* 1240 viewport */
+
+@media (min-width: 1240px) {
+    .color-bg:before {
+        border-right: 1240px solid transparent;
+    }
+
+    .menu-wrap .hamburger {
+        margin-right: 1100px;
+    }
+}
+
+/* 1440 viewport */
+@media (min-width: 1440px) {
+    .color-bg:before {
+        border-right: 1440px solid transparent;
+    }
+
+    .color-bg {
+        padding: 100px;
+    }
+
+    .color-bg-image {
+        width: 500px;
+    }
+
+    .menu-wrap .hamburger {
+        margin-right: 1265px;
+    }
+}
+
+/* 1920 viewport */
+@media (min-width: 1920px) {
+    .color-bg:before {
+        border-right: 1920px solid transparent;
+    }
+
+    .menu-wrap .hamburger {
+        margin-right: 1744px;
+    }
+
+    .showcase h1 {
+        font-size: 5.5rem;
+    }
+
+    .showcase p {
+        font-size: 1.5rem;
+    }
+
+    .color-bg-wrapper p {
+        font-size: 1.3rem;
+    }
+
+    .services-par {
+        width: 600px;
+        font-size: 1.2rem;
+    }
+
+    .illinoistitle {
+        font-size: 3rem;
+    }
+}
+

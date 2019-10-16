@@ -1,0 +1,101 @@
+include layout
+
+block content
+
+.content-wrapper
+  // Image and text
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    img.d-inline-block.align-top(src='static/media/USNP.png' width='30' height='30' alt='')
+    a.navbar-brand(href='#') Home Care Plus
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarNavAltMarkup.collapse.navbar-collapse
+      .navbar-nav
+        a.nav-item.nav-link.active(href='#')
+          | Home Care Services
+          span.sr-only (current)
+        a.nav-item.nav-link(href='#') Family Support
+        a.nav-item.nav-link(href='#') Hospital to Home
+        a.nav-item.nav-link(href='#') Care Costs &amp; Resources
+        form.form-inline
+          input.form-control.mr-sm-2(type='search' placeholder='Search' aria-label='Search')
+          button.btn.btn-outline-primary.my-2.my-sm-0(type='submit') Search
+  img.img-fluid(src='static/media/landing-bg.jpg' alt='Responsive image')
+  .opening-paragraph
+    .opening-title
+      h3.sentence-1 Caring for Families Impacted by Age or Illness
+    .landing-page-box-1
+      i.far.fa-calendar-alt
+      h4.sentence-2 Weekday Respite Plan for YOU, the Family Caregiver
+      p.1st-paragraph
+        | Many visits to the doctor&apos;s office and pharmacy are a normal part of life for many seniors...
+      .learn-more-btn-box-1
+        a.learn-more(href='#') Learn More
+        i.fas.fa-chevron-right
+    .landing-page-box-2
+      i.far.fa-lightbulb
+      h4.sentence-3 Which care solutions will make your life easier?
+      p.2nd-paragraph
+        | You will find yourself less versatile as you age, and daily living tasks may become more difficult...
+      .learn-more-btn-box-1
+        a.learn-more(href='#') Learn More
+        i.fas.fa-chevron-right
+    .quiz-box
+      i.fas.fa-brain
+      h3.quiz-title TAKE THE QUIZ!
+      p.care-needs-quiz Care Needs Quiz
+      p.quiz-par
+        | Use our online needs assessment tool to get an idea of the level of service you may need if you are exploring home care options. Also, after a free home inspection, every SYNERGY HomeCare care plan is customized to your exact needs, so call SYNERGY HomeCare today.
+      .quiz-btn-box
+        a.care-estimator-btn(href='#') Care Estimator
+        i.fas.fa-chevron-right
+    //
+      <h5 class="package-title">Packages Include:</h5>
+      <div class="package-list-bg-wrap">
+      <ul class="package-list">
+      <li class="package-list-style">⦁	Four to five hours of treatment</li>
+      <li class="package-list-style">⦁	Help prepare for the appointment</li>
+      <li class="package-list-style">⦁	Attend doctor's appointment</li>
+      <li class="package-list-style">⦁	Ask questions you have nominated</li>
+      <li class="package-list-style">⦁	Pay attention on doctor’s visit</li>
+      <li class="package-list-style">⦁	Pharmacy drop-off and pick-up</li>
+      <li class="package-list-style">⦁	Trip to the grocery store (if necessary)</li>
+      <li class="package-list-style">⦁	Go home and settle down</li>
+      </ul>
+      </div>
+      <p class="package-list-learn-more-1">To learn more about our Weekday Health Appointment Package,
+      please contact your local SYNERGY HomeCare office or call (877) 230-4851.</p>
+      <p class="package-list-learn-more-2">Check with your local office to determine the best service plan for you.
+      Not all packages are offered at all locations.</p>
+  .caregiver
+    img.caregiver-img(src='static/media/our-caregivers.jpg' alt='Our Caregivers')
+    .caregiver-par-wrap
+      h3.caregiver-title Our Caregivers
+      p.caregiver-par
+        | Our caregivers are amazing people with an unparalleled capacity to care for everyone.
+      ul
+        li &#x2981;&#x9;National Criminal Background Check
+        li &#x2981;&#x9;Enhanced Training and Certifications
+        li &#x2981;&#x9;Our Caregivers are W-2 Employees
+        li &#x2981;&#x9;Bonded and Insured
+      .learn-more-btn-caregiver
+        a.learn-more.learn-more-caregiver(href='#') Learn More
+        i.fas.fa-chevron-right
+  .what-to-expect
+    h3.what-to-expect-title What To Expect (No Contracts, Just Care)
+    p.what-to-expect-par
+      | To start caring for you and your loved ones, we don&apos;t need a deal. 
+      a(href='#')
+        u Call us
+      |  for more information or to find a local group near you.
+  footer.footer
+    .footer-partials-1
+      h3.footer-title-1 Care &amp; Services
+      p.footer-links
+        a.footer-links(href='#') Home Care Services
+      p.footer-links
+        a.footer-links(href='#') Family Support
+      p.footer-links
+        a.footer-links(href='#') Hospitak to Home
+      p.footer-links
+        a.footer-links(href='#') Care Costs &amp; Resources
