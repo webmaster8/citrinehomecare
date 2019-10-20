@@ -52,6 +52,11 @@ li {
     opacity: 0.6;
 }
 
+.footer-img {
+    width: 100%;
+    padding: 30px;
+}
+
 .landing-page-box-1,
 .landing-page-box-2 {
     text-align: center;
@@ -390,6 +395,7 @@ li {
 
     .footer-img {
         width: 500px;
+        padding: 0px;
     }
 
 }
