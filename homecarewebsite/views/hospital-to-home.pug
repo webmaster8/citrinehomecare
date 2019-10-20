@@ -1,0 +1,221 @@
+include layout
+
+block content
+
+title Citrine Home Care | Hospital to Home
+
+.content-wrapper
+  // Image and text
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    .d-flex.site-logo-wrap
+      img.d-inline-block.align-top.site-logo(src='static/media/citrine-logo-icon.png' alt='')
+      a.navbar-brand(href='/') Citrine Home Care
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarNavAltMarkup.collapse.navbar-collapse
+      .navbar-nav
+        a.nav-item.nav-link(href='/homecare-services')
+          | Home Care Services
+          span.sr-only (current)
+        a.nav-item.nav-link(href='/family-support') Family Support
+        a.nav-item.nav-link.active(href='/hospital-to-home') Hospital to Home
+        a.nav-item.nav-link(href='/care-resources') Care Costs &amp; Resources
+        form.form-inline
+          input.form-control.mr-sm-2(type='search' placeholder='Search' aria-label='Search')
+          button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+  .landing-bg-wrapper(style="background: url(static/media/landing-bg.jpg)no-repeat center center/cover;")
+    img.img-fluid(src='static/media/citrine-logo-landing.png' alt='Responsive image')
+  .content-wrapper-hth
+    h3.sentence-1-hth.mt-5 Hospital to Home
+    h4.mt-4 Care for Everyone
+    p
+      | We are faced with many new and unexpected obstacles as seniors return home from a hospital stay.
+      | It can be hard to understand medications or handle new medicines if we struggle to read fine print.
+      | Even if they struggle from memory problems, their wellbeing relies on recalling and meeting discharged orders when
+      | creating and holding doctor&nbsp;visits for follow-up. It can also be a challenge to get the physical help and assistance
+      | they need while they heal. Is it any surprise that almost one-fifth of seniors were re-hospitalized within 30 days of
+      | being released from the hospital, usually with a different condition from that for which they were first admitted?
+    p
+      | The great news is that at a time when people leave the hospital sicker and quicker than ever before,
+      | SYNERGY HomeCare can provide the support your senior loved one needs to fully recover.
+    #accordionExample.accordion
+      .card
+        #headingOne.card-header
+          h2.mb-0
+            button.btn.btn-link(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne')
+              | Post-Hospitlization Care
+        #collapseOne.collapse.show(aria-labelledby='headingOne' data-parent='#accordionExample')
+          .card-body
+            | After the hospital discharge of your elderly parent you can rely on our expertise, empathy and supportive support to ensure that your loved one experiences a complete and quick recovery at home. With one or more of the following services, we can build a personalized care plan that addresses the unique needs of your parent: 
+            ul.hth-list
+              li.mb-2.mt-2 Hourly assistance to around-the-clock care
+              li.mb-2 Coordination and scheduling with therapists and specialists
+              li.mb-2 Medication reminders for treatment and prevention
+              li.mb-2 Fall and injury prevention
+              li.mb-2 Change in condition alerts
+              li.mb-2 Transportation and scheduling of doctors&rsquo; appointments
+              li.mb-2 Assistance with bathing, dressing and personal care
+              li.mb-2 Housekeeping, meal preparation and nutrition
+              li.mb-2 Complimentary medical alarm for continuous monitoring
+              li.mb-2 Prescription drug pickups
+              li.mb-2 Assistance with daily activities
+              li.mb-2 Housekeeping, meal preparation and nutrition
+              li.mb-2 Help with bathing, dressing and personal care
+      .card
+        #headingTwo.card-header
+          h2.mb-0
+            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo')
+              | Home Care Helps Reduce Readmissions
+        #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#accordionExample')
+          .card-body
+            | Did you know that within one month of discharge, 20 percent of Medicare patients are readmitted to a hospital? Address this as follows:
+            ul.hth-list
+              li.mb-2.mt-2
+                | Within a month of discharge, one in five Medicare patients end up in the hospital, a practice costing billions of dollars a year.
+              li.mb-2
+                | Eric Coleman MD, Colorado University in Denver, said patients often have a honeymoon idea of how things will be when they&apos;re back. Then they go back to the hospital when they get confused about how to handle their medication or run into other issues-they don&apos;t know where else to go.
+              li.mb-2
+                | A research in the New England Journal of Medicine April 2009 showed that within a month of discharge, about 20 percent of 11.9 million patients were readmitted to the hospital-about a third were back in the hospital within three months. Unexpected recurrent trips of the $102.6 billion Medicare paying hospitals in 2004 were valued at $17.4 billion. &quot;It&apos;s a big hunk of money and it&apos;s a big hunk of misery,&quot; said study co-author, Dr. Stephen Jencks.
+              li.mb-2
+                | Readmissions from hospitals and their expenses are now attracting even more scrutiny because the budget of President Barack Obama calls for a decrease in Medicare readmissions spending to help pay for health care reform.
+              li.mb-2
+                | In 2008 the Gerontological Society of America published a separate study representing almost 3 million community-dwelling Medicare beneficiaries:
+                ul.hth-list.ml-4
+                  li.mb-2.mt-2
+                    | Individuals living alone had a 50% rise in early readmission chances (within 60 days) relative to those who did not live alone.
+                  li.mb-2
+                    | Individuals reporting any unmet functional need had 48 percent higher early readmission chances compared to those with no unmet IADL needs.
+                  li.mb-2
+                    | Individuals lacking self-management skills had an improvement in early readmission chances of 44 percent relative to those lacking self-management skills.
+                  li.mb-2
+                    | A statistically relevant correlation with early readmission was not shown by financial income.
+      .card
+        #headingThree.card-header
+          h2.mb-0
+            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree')
+              | How SYNERGY HomeCare Can Help
+        #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#accordionExample')
+          .card-body
+            | SYNERGY HomeCare companies have first-hand experience in helping to solve hand-off and coordination issues as patient moves from acute care to home. 
+            br
+            br
+            |                             SYNERGY HomeCare is responsible for managing and reaching out to our clients in the healthcare sector to help seal gaps in transfers to home. In order to help achieve patient priorities, organizations should start a strategic conversation with hospital leaders on the quality of home care.
+      .card
+        #headingFour.card-header
+          h2.mb-0
+            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseFour' aria-expanded='false' aria-controls='collapseFour')
+              | Rehabilitation
+        #collapseFour.collapse(aria-labelledby='headingFour' data-parent='#accordionExample')
+          .card-body
+            | When your elderly parent heals from orthopedic surgery &mdash; whether it&apos;s hip implants or a new knee, hip or elbow procedure &mdash; it&apos;s vital that they obey their doctor&apos;s recovery instructions carefully. To prevent prolonged weakness or even loss of function, the drills for strength and range of motion must be performed on the prescribed schedule. 
+            br
+            br
+            |                             Although our caregivers do not provide rehabilitation services, they help with treatment appointments being transported and planned. Our caregivers can also take your loved one on daily walks if needed for their rehabilitation and provide helpful reminders to do their exercises for home treatment.
+      .card
+        #headingFive.card-header
+          h2.mb-0
+            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseFive' aria-expanded='false' aria-controls='collapseFive')
+              | Resources for Recovery Assistance
+        #collapseFive.collapse(aria-labelledby='headingFive' data-parent='#accordionExample')
+          .card-body
+            | A hospital stay can take a major impact on the health of elderly people, whether due to sickness, injury or surgery. Seniors are especially prone to fall and relapse after a hospital discharge. We can potentially re-injure themselves by lifting or making a sudden move. We may not eat well enough for a complete recovery, sometimes feeling too frail to prepare their own meals. Here are some valuable tools to ensure a complete recovery at home for your loved one:
+            ul.hth-list
+              li.mb-2.mt-2
+                | Nutrition Resources: Special dietary needs can be managed through strict shopping guidelines and proper food preparation for conditions such as diabetes, hypertension or heart disease.  Proper nutrition in the recovery process will help. Your caregiver will prepare food to fuel your recovery in accordance with your exact nutritional needs.
+              li.mb-2
+                | Logistical Resources: Recovery also includes doctor or professional follow-up visits. SYNERGY HomeCare can help in the planning, preparation and fulfillment of clinical and counseling appointments for follow-up. With your consent, your caregiver can attend doctor&apos;s appointments and take notes to make it home and be followed by instructions.
+              li.mb-2
+                | Medication Resources: Medication is often needed to recover from a disease or surgery. SYNERGY HomeCare will assist with reminders of medication so that medicine is taken as instructed on time. Your caregiver can, of course, drop off and collect prescriptions as needed at your local pharmacy.
+      .card
+        #headingSix.card-header
+          h2.mb-0
+            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseSix' aria-expanded='false' aria-controls='collapseSix')
+              | Stroke Recovery
+        #collapseSix.collapse(aria-labelledby='headingSix' data-parent='#accordionExample')
+          .card-body
+            | Stroke in the elderly is all-too-common, and rehabilitation is ongoing. In addition to having experience and training in caring for stroke patients, our stroke caregivers are fully insured and committed to your health. However, by allowing caregivers to pass federal criminal background checks, we offer our clients peace of mind. Here is a list of services provided by our caregivers:
+            ul.hth-list
+              li.mb-2.mt-2 Hourly assistance to around-the-clock care
+              li.mb-2
+                | Companionship, calming anxiety, stress and depression common among stroke patients
+              li.mb-2 Coordination and scheduling with therapists and specialists
+              li.mb-2 Medication reminders for treatment and prevention
+              li.mb-2 Fall and injury prevention
+              li.mb-2 Change in condition alerts
+              li.mb-2 Transportation and scheduling of doctors&rsquo; appointments
+              li.mb-2 Assistance with bathing, dressing and personal care
+              li.mb-2 Housekeeping, meal preparation and nutrition
+              li.mb-2 Complimentary medical alarm for continuous monitoring
+      .card
+        #headingSeven.card-header
+          h2.mb-0
+            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseSeven' aria-expanded='false' aria-controls='collapseSeven')
+              | Cancer Recovery
+        #collapseSeven.collapse(aria-labelledby='headingSeven' data-parent='#accordionExample')
+          .card-body
+            | During your loved one&apos;s cancer treatment, SYNERGY HomeCare will make all the difference. The caregivers can keep up with household tasks, connect about the progress of a loved one with long-distance family members, and ensure the highest quality home care through vomiting, anemia, discomfort, and other complications. To meet your loved one&apos;s needs, we will build a personalized care plan that includes one or more of the following services:
+            ul.hth-list
+              li.mb-2.mt-2
+                | Scheduling, transportation and companionship for treatments and doctor&apos;s appointments
+              li.mb-2 Watchful care during recovery from routine treatments
+              li.mb-2 Prescription drug pickups
+              li.mb-2 Assistance with daily activities
+              li.mb-2 Housekeeping, meal preparation and nutrition
+              li.mb-2 Help with bathing, dressing and personal care
+      .card
+        #headingEight.card-header
+          h2.mb-0
+            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseEight' aria-expanded='false' aria-controls='collapseEight')
+              | Easing the Recovery Process from Cancer
+        #collapseEight.collapse(aria-labelledby='headingEight' data-parent='#accordionExample')
+          .card-body
+            | At SYNERGY HomeCare, when they undergo chemotherapy, radiation and surgery, they have the luxury of bonding with cancer patients and their families. If this is a risk that you face, we are happy and ready to provide you and your family with the moral support, motivation and treatment that you will need while battling this disease. 
+            br
+            br
+            |                             There are several things that can help ease cancer treatments. For each person our in-home caregivers help, our purpose is to give them the least stressful and most comfortable recovery experience, given the nasty side effects of common cancer therapy for patients.
+            br
+            br
+            |                             By maintaining with household duties, to interacting with long-distance family members about a loved one&apos;s progress, to providing the highest quality in-home care during vomiting, anemia, pain, infection, and other complications, SYNERGY HomeCare will make all the difference during your cancer recovery.
+      .card
+        #headingNine.card-header
+          h2.mb-0
+            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseNine' aria-expanded='false' aria-controls='collapseNine')
+              | Cancer is Beatable
+        #collapseNine.collapse(aria-labelledby='headingNine' data-parent='#accordionExample')
+          .card-body
+            | A stressful situation can become a rewarding experience with the right kind of assistance and treatment. Cancer is beatable, and we are here to support SYNERGY HomeCare and our caregivers at home.
+      .card
+        #headingTen.card-header
+          h2.mb-0
+            button.btn.btn-link.collapsed(type='button' data-toggle='collapse' data-target='#collapseTen' aria-expanded='false' aria-controls='collapseTen')
+              | Surgery Recovery
+        #collapseTen.collapse(aria-labelledby='headingTen' data-parent='#accordionExample')
+          .card-body
+            | When they recover from surgery, older adults may be depressed and need a lot of emotional support and help with simple daily tasks. We&apos;re here to assist with custom-made care plans that enable your parent to get the treatment they need at a reasonable price.
+            ul.hth-list
+              li.mb-2.mt-2 Hourly assistance to around-the-clock care
+              li.mb-2 Coordination and scheduling with therapists and specialists
+              li.mb-2 Medication reminders for treatment and prevention
+              li.mb-2 Fall and injury prevention
+              li.mb-2 Change in condition alerts
+              li.mb-2 Transportation and scheduling of doctors&rsquo; appointments
+              li.mb-2 Assistance with bathing, dressing and personal care
+              li.mb-2 Housekeeping, meal preparation and nutrition
+              li.mb-2 Complimentary medical alarm for continuous monitoring
+              li.mb-2 Prescription drug pickups
+              li.mb-2 Assistance with daily activities
+              li.mb-2 Housekeeping, meal preparation and nutrition
+              li.mb-2 Help with bathing, dressing and personal care
+  footer.footer
+    .footer-partials-1
+      h3.footer-title-1 Care &amp; Services
+      p.footer-links
+        a.footer-links(href='/homecare-services') Home Care Services
+      p.footer-links
+        a.footer-links(href='/family-support') Family Support
+      p.footer-links
+        a.footer-links(href='/hospital-to-home') Hospital to Home
+      p.footer-links
+        a.footer-links(href='/care-resources') Care Costs &amp; Resources
+    .footer-partials-2
+      img.footer-img(src='static/media/citrine-logo-landing.png' alt='')

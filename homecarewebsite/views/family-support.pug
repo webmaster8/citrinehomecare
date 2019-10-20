@@ -1,0 +1,103 @@
+include layout
+
+block content
+
+title Citrine Home Care | Family Support
+
+.content-wrapper
+  // Image and text
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    .d-flex.site-logo-wrap
+      img.d-inline-block.align-top.site-logo(src='static/media/citrine-logo-icon.png' alt='')
+      a.navbar-brand(href='/') Citrine Home Care
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarNavAltMarkup.collapse.navbar-collapse
+      .navbar-nav
+        a.nav-item.nav-link(href='/homecare-services')
+          | Home Care Services
+          span.sr-only (current)
+        a.nav-item.nav-link.active(href='/family-support') Family Support
+        a.nav-item.nav-link(href='/hospital-to-home') Hospital to Home
+        a.nav-item.nav-link(href='/care-resources') Care Costs &amp; Resources
+        form.form-inline
+          input.form-control.mr-sm-2(type='search' placeholder='Search' aria-label='Search')
+          button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+  .landing-bg-wrapper(style="background: url(static/media/landing-bg.jpg)no-repeat center center/cover;")
+    img.img-fluid(src='static/media/citrine-logo-landing.png' alt='Responsive image')
+  .content-wrapper-fs
+    h3.sentence-1-fs Caring for Families Impacted by Age or Illness
+    .fs-body-wrapper
+      h5.respite res&middot;pite
+      h6 /&#x2C8;resp&#x259;t,r&emacr;&#x2C8;sp&imacr;t/
+      p.font-weight-bold noun
+      p.noun-par.ml-4
+        | a short period of rest or relief from something difficult or unpleasant.
+        br
+        br
+        |                         &quot;the refugee encampments will provide some respite from the suffering&quot;
+        |                         synonyms:&nbsp;rest,&nbsp;break,&nbsp;breathing space,&nbsp;interval,&nbsp;intermission,&nbsp;interlude,
+        br
+        | &nbsp;recess,&nbsp;lull,&nbsp;pause, time out;&nbsp;
+        |                         relief,&nbsp;relaxation,&nbsp;repose;&nbsp;informal:
+        br
+        | &nbsp;breather,&nbsp;letup
+        |                         &quot;a brief respite&quot;
+      br
+      .par-set-1-fs.border-bottom
+        p
+          | While it is a labor of love to care for your elderly parent, it is still labor.
+          | You may find yourself giving up favorite hobbies and holidays as you spend more and more of your time caring for your
+          | senior parent, saying no to friends, feeling disturbed at work and getting more stressed with your spouse and children.
+          | Juggling treatment with jobs, raising children, and running a household over time increases your risk of depression,
+          | chronic disease, and a decrease in overall quality of life.
+        p
+          | Given these dangers, if you&apos;re like most caregivers, you can lack good health habits. You can skimp on sleep,
+          | eat poorly, miss regular exercise, go on even if you&apos;re sick and cancel your own medical appointments.
+          | You are more likely to suffer from a chronic condition such as high cholesterol and high blood pressure and be
+          | overweight if you are a caregiver who neglects your own safety. Caregiving can also have a negative impact on your
+          | mental health, with an estimated 46% to 59% of caregivers suffering from clinical depression.
+        p
+          | It&apos;s time to stop and tell yourself: &quot;What benefit will I be if I become sick to the person I care about?&quot;
+          | As a caregiver, taking good care of yourself is important to you &mdash; even while you&apos;re taking care of your loved one
+          | of aging.
+        p
+          | It is acceptable to take a much-needed time to meet your elderly parent&apos;s needs through the respite care services
+          | provided by SYNERGY HomeCare.
+      h3.sentence-1-fs.sentence-2-fs.mt-3.mb-4 Resources for Family Caregivers
+      p
+        | When they least expect it, adult children can be forced into the caregiver position.
+        | It only takes the sickness of an elderly parent, a slip in the restroom, or a collision triggered by a driver&apos;s
+        | seat mistake, and an adult child may find their current job as a caregiver &mdash; a role for which few people plan or
+        | prepare adequately. For practical tips and advice on care, please read online or download a few handy resources below:
+      h3.play-it-safe Play It Safe
+      p
+        | A reference to the obvious red flags that your elderly loved one needs assistance.
+      p [slideshow]
+      h3.convo Conversation on Aging
+      p
+        a(href='#') https://randomlinks.com
+        br
+        |                     [TO CHANGE LINKS]
+        br
+        |                     A how-to guide on how to handle &quot;the conversation&quot; about your aging loved ones&apos; home care needs.
+      h3.convo Alzheimer&apos;s: What is happening to my loved one? 
+      p
+        a(href='#') https://randomlinks.com
+        br
+        |                     [TO CHANGE LINKS]
+        br
+        |                     Basic knowledge of this baffling and tragic disease.
+  footer.footer
+    .footer-partials-1
+      h3.footer-title-1 Care &amp; Services
+      p.footer-links
+        a.footer-links(href='/homecare-services') Home Care Services
+      p.footer-links
+        a.footer-links(href='/family-support') Family Support
+      p.footer-links
+        a.footer-links(href='/hospital-to-home') Hospital to Home
+      p.footer-links
+        a.footer-links(href='/care-resources') Care Costs &amp; Resources
+    .footer-partials-2
+      img.footer-img(src='static/media/citrine-logo-landing.png' alt='')

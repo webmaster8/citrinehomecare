@@ -1,0 +1,124 @@
+include layout
+
+block content
+
+title Citrine Home Care | Home Care Services
+
+.content-wrapper
+  // Image and text
+  nav.navbar.navbar-expand-lg.navbar-light.bg-light
+    .d-flex.site-logo-wrap
+      img.d-inline-block.align-top.site-logo(src='static/media/citrine-logo-icon.png' alt='')
+      a.navbar-brand(href='/') Citrine Home Care
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarNavAltMarkup.collapse.navbar-collapse
+      .navbar-nav
+        a.nav-item.nav-link.active(href='/homecare-services')
+          | Home Care Services
+          span.sr-only (current)
+        a.nav-item.nav-link(href='/family-support') Family Support
+        a.nav-item.nav-link(href='/hospital-to-home') Hospital to Home
+        a.nav-item.nav-link(href='/care-resources') Care Costs &amp; Resources
+        form.form-inline
+          input.form-control.mr-sm-2(type='search' placeholder='Search' aria-label='Search')
+          button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+  .landing-bg-wrapper(style="background: url(static/media/landing-bg.jpg)no-repeat center center/cover;")
+    img.img-fluid(src='static/media/citrine-logo-landing.png' alt='Responsive image')
+  .content-wrapper-hs.border-bottom
+    h3.sentence-1-hth.mt-5.mb-4 Care For Everyone
+    h4.mt-4.partial-titles Home Care Services
+    p.text-break
+      | Care&nbsp;at&nbsp;home&nbsp;is&nbsp;a&nbsp;great&nbsp;way&nbsp;to&nbsp;get&nbsp;the&nbsp;assistance&nbsp;you&nbsp;desire.
+      | You may be an elder&nbsp;who needs help with day-to-day tasks, so trust our caregivers to help prepare meals or
+      | provide personal care. You may also take care of your elderly parent, and you just need someone to be with them while
+      | you are doing your chores.
+    .hs-box-wrap.d-lg-flex
+      .hs-box-wrap-1
+        img.w-100.img-adjustment-1(src='static/media/package-list-bg.jpg' alt='Why Citrine')
+        .hs-quote-wrap
+          h4 Why Citrine Home Care?
+          ul.hth-list.pl-4.pt-1
+            li.mb-2.mt-2.text-white Why choose us?
+            li.mb-2.text-white First Steps
+            li.mb-2.text-white Our Team
+            li.mb-2.text-white How we can help
+      .hs-box-wrap-2
+        img.w-100.mt-4.img-adjustment-2(src='static/media/homecare3.jpg' alt='Why Citrine')
+        .hs-quote-wrap
+          h4 Personal Assistance
+          ul.hth-list.pl-4.pt-1
+            li.mb-2.mt-2.text-white Why choose us?
+            li.mb-2.text-white First Steps
+            li.mb-2.text-white Our Team
+            li.mb-2.text-white How we can help
+    .hs-box-wrap.d-lg-flex
+      .hs-box-wrap-1
+        img.w-100.mt-4.img-adjustment-2(src='static/media/homecare4.jpg' alt='Why Citrine')
+        .hs-quote-wrap
+          h4 Errands &amp; Transportation
+          ul.hth-list.pl-4.pt-1
+            li.mb-2.mt-2.text-white Why choose us?
+            li.mb-2.text-white First Steps
+            li.mb-2.text-white Our Team
+            li.mb-2.text-white How we can help
+      .hs-box-wrap-2
+        img.w-100.mt-4.img-adjustment-2(src='static/media/homecare6.jpg' alt='Why Citrine')
+        .hs-quote-wrap
+          h4 Meals
+          ul.hth-list.pl-4.pt-1
+            li.mb-2.mt-2.text-white Why choose us?
+            li.mb-2.text-white First Steps
+            li.mb-2.text-white Our Team
+            li.mb-2.text-white How we can help
+    .hs-box-wrap.d-lg-flex
+      .hs-box-wrap-1
+        img.w-100.mt-4.img-adjustment-2(src='static/media/homecare7.jpg' alt='Why Citrine')
+        .hs-quote-wrap
+          h4 Light Housekeeping
+          ul.hth-list.pl-4.pt-1
+            li.mb-2.mt-2.text-white Why choose us?
+            li.mb-2.text-white First Steps
+            li.mb-2.text-white Our Team
+            li.mb-2.text-white How we can help
+      .hs-box-wrap-2
+        img.w-100.mt-4.img-adjustment-2(src='static/media/homecare5.jpg' alt='Why Citrine')
+        .hs-quote-wrap
+          h4 Companionship
+          ul.hth-list.pl-4.pt-1
+            li.mb-2.mt-2.text-white Why choose us?
+            li.mb-2.text-white First Steps
+            li.mb-2.text-white Our Team
+            li.mb-2.text-white How we can help
+    .hs-box-wrap.d-lg-flex
+      .hs-box-wrap-1
+        img.w-100.mt-4.img-adjustment-2(src='static/media/homecare2.jpg' alt='Why Citrine')
+        .hs-quote-wrap
+          h4 Live-in Care
+          ul.hth-list.pl-4.pt-1
+            li.mb-2.mt-2.text-white Why choose us?
+            li.mb-2.text-white First Steps
+            li.mb-2.text-white Our Team
+            li.mb-2.text-white How we can help
+      .hs-box-wrap-2
+        img.w-100.mt-4.img-adjustment-2(src='static/media/homecare4.jpg' alt='Why Citrine')
+        .hs-quote-wrap
+          h4 24 Hour Care
+          ul.hth-list.pl-4.pt-1
+            li.mb-2.mt-2.text-white Why choose us?
+            li.mb-2.text-white First Steps
+            li.mb-2.text-white Our Team
+            li.mb-2.text-white How we can help
+  footer.footer
+    .footer-partials-1
+      h3.footer-title-1 Care &amp; Services
+      p.footer-links
+        a.footer-links(href='/homecare-services') Home Care Services
+      p.footer-links
+        a.footer-links(href='/family-support') Family Support
+      p.footer-links
+        a.footer-links(href='/hospital-to-home') Hospital to Home
+      p.footer-links
+        a.footer-links(href='/care-resources') Care Costs &amp; Resources
+    .footer-partials-2
+      img.footer-img(src='static/media/citrine-logo-landing.png' alt='')

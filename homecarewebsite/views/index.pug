@@ -2,53 +2,58 @@ include layout
 
 block content
 
+title Citrine Home Care
+
 .content-wrapper
   // Image and text
   nav.navbar.navbar-expand-lg.navbar-light.bg-light
-    img.d-inline-block.align-top(src='static/media/citrine-logo.PNG' width='30' height='30' alt='')
-    a.navbar-brand(href='#') Citrine Home Care
+    .d-flex.site-logo-wrap
+      img.d-inline-block.align-top.site-logo(src='static/media/citrine-logo-icon.png' alt='')
+      a.navbar-brand(href='/') Citrine Home Care
     button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNavAltMarkup' aria-controls='navbarNavAltMarkup' aria-expanded='false' aria-label='Toggle navigation')
       span.navbar-toggler-icon
     #navbarNavAltMarkup.collapse.navbar-collapse
       .navbar-nav
-        a.nav-item.nav-link.active(href='#')
+        a.nav-item.nav-link(href='/homecare-services')
           | Home Care Services
           span.sr-only (current)
-        a.nav-item.nav-link(href='#') Family Support
-        a.nav-item.nav-link(href='#') Hospital to Home
-        a.nav-item.nav-link(href='#') Care Costs &amp; Resources
+        a.nav-item.nav-link(href='/family-support') Family Support
+        a.nav-item.nav-link(href='/hospital-to-home') Hospital to Home
+        a.nav-item.nav-link(href='/care-resources') Care Costs &amp; Resources
         form.form-inline
           input.form-control.mr-sm-2(type='search' placeholder='Search' aria-label='Search')
-          button.btn.btn-outline-primary.my-2.my-sm-0(type='submit') Search
-  img.img-fluid(src='static/media/landing-bg.jpg' alt='Responsive image')
+          button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+  .landing-bg-wrapper(style="background: url(static/media/landing-bg.jpg)no-repeat center center/cover;")
+    img.img-fluid(src='static/media/citrine-logo-landing.png' alt='Responsive image')
   .opening-paragraph
     .opening-title
       h3.sentence-1 Caring for Families Impacted by Age or Illness
-    .landing-page-box-1
-      i.far.fa-calendar-alt
-      h4.sentence-2 Weekday Respite Plan for YOU, the Family Caregiver
-      p.1st-paragraph
-        | Many visits to the doctor&apos;s office and pharmacy are a normal part of life for many seniors...
-      .learn-more-btn-box-1
-        a.learn-more(href='#') Learn More
-        i.fas.fa-chevron-right
-    .landing-page-box-2
-      i.far.fa-lightbulb
-      h4.sentence-3 Which care solutions will make your life easier?
-      p.2nd-paragraph
-        | You will find yourself less versatile as you age, and daily living tasks may become more difficult...
-      .learn-more-btn-box-1
-        a.learn-more(href='#') Learn More
-        i.fas.fa-chevron-right
-    .quiz-box
-      i.fas.fa-brain
-      h3.quiz-title TAKE THE QUIZ!
-      p.care-needs-quiz Care Needs Quiz
-      p.quiz-par
-        | Use our online needs assessment tool to get an idea of the level of service you may need if you are exploring home care options. Also, after a free home inspection, every SYNERGY HomeCare care plan is customized to your exact needs, so call SYNERGY HomeCare today.
-      .quiz-btn-box
-        a.care-estimator-btn(href='#') Care Estimator
-        i.fas.fa-chevron-right
+    .opening-par-boxes
+      .landing-page-box-1
+        i.far.fa-calendar-alt
+        h4.sentence-2 Weekday Respite Plan for YOU, the Family Caregiver
+        p.1st-paragraph
+          | Many visits to the doctor&apos;s office and pharmacy are a normal part of life for many seniors...
+        .learn-more-btn-box-1
+          a.learn-more(href='#') Learn More
+          i.fas.fa-chevron-right
+      .landing-page-box-2
+        i.far.fa-lightbulb
+        h4.sentence-3 Which care solutions will make your life easier?
+        p.2nd-paragraph
+          | You will find yourself less versatile as you age, and daily living tasks may become more difficult...
+        .learn-more-btn-box-1
+          a.learn-more(href='#') Learn More
+          i.fas.fa-chevron-right
+      .quiz-box
+        i.fas.fa-brain
+        h3.quiz-title TAKE THE QUIZ!
+        p.care-needs-quiz Care Needs Quiz
+        p.quiz-par
+          | Use our online needs assessment tool to get an idea of the level of service you may need if you are exploring home care options. Also, after a free home inspection, every SYNERGY HomeCare care plan is customized to your exact needs, so call SYNERGY HomeCare today.
+        .quiz-btn-box
+          a.care-estimator-btn(href='#') Care Estimator
+          i.fas.fa-chevron-right
     //
       <h5 class="package-title">Packages Include:</h5>
       <div class="package-list-bg-wrap">
@@ -92,10 +97,12 @@ block content
     .footer-partials-1
       h3.footer-title-1 Care &amp; Services
       p.footer-links
-        a.footer-links(href='#') Home Care Services
+        a.footer-links(href='/homecare-services') Home Care Services
       p.footer-links
-        a.footer-links(href='#') Family Support
+        a.footer-links(href='/family-support') Family Support
       p.footer-links
-        a.footer-links(href='#') Hospitak to Home
+        a.footer-links(href='/hospital-to-home') Hospital to Home
       p.footer-links
-        a.footer-links(href='#') Care Costs &amp; Resources
+        a.footer-links(href='/care-resources') Care Costs &amp; Resources
+    .footer-partials-2
+      img.footer-img(src='static/media/citrine-logo-landing.png' alt='')

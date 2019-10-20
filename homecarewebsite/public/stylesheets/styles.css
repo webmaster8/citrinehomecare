@@ -27,12 +27,29 @@ li {
     border-bottom: 6px solid darkslategray;
 }
 
+.site-logo {
+    width: 50px;
+}
+
+.site-logo-wrap {
+    align-items: center;
+}
+
 .navbar-light .navbar-brand {
-    color: darkslategray;
+    color: darkorange;
     font-weight: 500;
-    margin-left: -35px;
     font-size: 1.4rem;
-    margin-left: -10px;
+    margin-left: 5px;
+    margin-right: 0px;
+}
+
+.landing-bg-wrapper {
+    height: 400px;
+}
+
+.img-fluid {
+    width: 100%;
+    opacity: 0.6;
 }
 
 .landing-page-box-1,
@@ -109,9 +126,9 @@ li {
     margin: 20px;
 }
 
-.opening-title {
+/* .opening-title {
     display: flex;
-}
+} */
 
 .sentence-1,
 .sentence-1-fs,
@@ -143,7 +160,7 @@ li {
 }
 
 .caregiver-par-wrap {
-    background-color: darkgray;
+    background-color: darkorange;
     color: #fff;
     padding: 30px 10px;
 }
@@ -220,7 +237,8 @@ li {
 
 .fs-body-wrapper,
 .content-wrapper-hth,
-.content-wrapper-cr {
+.content-wrapper-cr,
+.content-wrapper-hs {
     margin: 20px;
 }
 
@@ -256,16 +274,135 @@ li {
 
 /* HOME CARE SERVICES ============================== */
 
-.hs-box-1-wrap {
+.hs-quote-wrap {
     background: darkslategray;
     color: #fff;
     padding: 20px;
 }
 
+/* CARE COSTS AND RESOURCES ============================== */
+
+.content-wrapper-cr {
+    border-bottom: 1px solid lightgray;
+}
+
+/* MEDIA QUERY 1024px ============================== */
+
+@media (min-width: 1024px) {
+
+    .navbar-light .navbar-brand {
+        font-size: 2rem;
+        margin-left: 3px;
+    }
+
+    .site-logo {
+        height: 75px;
+        width: auto;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .landing-bg-wrapper {
+        height: auto;
+    }
+
+    .img-fluid {
+        height: 500px;
+    }
+
+    .opening-par-boxes {
+        display: flex;
+    }
+
+    .landing-page-box-1,
+    .landing-page-box-2,
+    .quiz-box {
+        width: 550px;
+        margin: 20px;
+    }
+
+    .caregiver {
+        display: flex;
+        background: darkorange;
+        justify-content: space-evenly;
+    }
+
+    .caregiver-img {
+        width: 400px;
+        height: 400px;
+        padding: 20px;
+    }
+
+    .caregiver-par-wrap {
+        width: 450px;
+    }
+
+    .what-to-expect-par {
+        text-align: center;
+    }
+
+    /* CONTENT WRAPPERS ============================== */
+
+    .content-wrapper-cr,
+    .content-wrapper-hth,
+    .content-wrapper-fs {
+        width: 1000px;
+        margin: auto;
+        border-left: 1px solid green;
+        border-right: 1px solid green;
+        padding: 0px 100px;
+        margin-bottom: 40px;
+        border-bottom: none;
+    }
+
+    .content-wrapper-hs {
+        width: 60%;
+        margin: auto;
+    }
+
+    .hs-box-wrap-1,
+    .hs-box-wrap-2 {
+        width: 400px;
+        margin: 20px;
+    }
+
+    .img-adjustment-1 {
+        height: 322px;
+    }
+    
+    .img-adjustment-2 {
+        height: 297px;
+        width: 392px;
+    }
+
+    .footer {
+        display: flex;
+    }
+
+    .footer-partials-1,
+    .footer-partials-2 {
+        width: 40%;
+        margin: auto;
+    }
+
+    .footer-img {
+        width: 500px;
+    }
+
+}
 
 
+/* PSEUDO ELEMENTS ============================== */
 
-
+.navbar-light .navbar-nav .nav-link:hover {
+    background: darkslategray;
+    color: #fff;
+    transition: all .2s cubic-bezier(0.6, 1.5, 0.6, 1);
+    border-radius: 1px;
+}
 
 
 
