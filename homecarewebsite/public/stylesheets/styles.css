@@ -7,7 +7,10 @@
 
 body {
     line-height: 1.4;
-    color: var(--overlay-color);
+}
+
+.content-wrapper {
+    background: darkorange;
 }
 
 p {
@@ -139,9 +142,13 @@ li {
 .sentence-1-fs,
 .sentence-1-hth {
     text-align: center;
-    color: darkslategrey;
+    color: #fff;
     font-style: italic;
     font-family: 'Courgette', cursive;
+    font-size: 2.4rem;
+}
+
+.secondary-title {
     font-size: 2rem;
 }
 
@@ -240,6 +247,10 @@ li {
     font-size: 1.6rem;
 }
 
+.partial-titles {
+    color: #fff;
+}
+
 .fs-body-wrapper,
 .content-wrapper-hth,
 .content-wrapper-cr,
@@ -283,6 +294,10 @@ li {
     background: darkslategray;
     color: #fff;
     padding: 20px;
+}
+
+.img-adjustment-2 {
+    margin-top: 20px;
 }
 
 /* CARE COSTS AND RESOURCES ============================== */
@@ -379,8 +394,9 @@ li {
     }
     
     .img-adjustment-2 {
-        height: 297px;
+        height: 321px;
         width: 392px;
+        margin-top: 0px;
     }
 
     .footer {
