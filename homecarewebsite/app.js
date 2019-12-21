@@ -30,6 +30,6 @@ app.get('/care-resources', (req, res) => {
 	res.render('care-resources');
 });
 
-app.listen(8080, () => {
-	console.log('The application is running in port 8080!');
+app.listen(80, () => {
+	console.log('The application is running in port 80!');
 });
